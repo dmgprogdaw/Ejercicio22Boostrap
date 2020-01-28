@@ -1,0 +1,13 @@
+html, body {
+  background-color: lightgray;
+}
+
+li {
+  list-style: none;
+}
+
+.menu2 {
+  margin: 0;
+  opacity: 0.9;
+  background-color: black;
+}
