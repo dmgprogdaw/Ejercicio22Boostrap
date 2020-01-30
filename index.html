@@ -6,37 +6,37 @@
     <title>Practica 22</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/usm/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/practica22.css">
   </header>
   <body>
+    
     <header class="container-fluid bg-primary">
-      <div class="row justify-content-around">
-        <div class="row col--12 col-lg-5 col-sm-8 order-2 order-sm-2">
-          <img src="img/coheteIcono.png" class="mt-3 d-none d-sm-block" height="40" width="40">        
-          <div class="input-group mb-3 col-lg-11 col-sm-10 col-12 mt-3">
-            <input type="text" class="form-control" placeholder="Amigos, Lugares y cosas que te gustan">
+      <div class="row justify-content-lg-around">
+        <div class="row col-lg-6 col-md-8 order-2 order-md-2 px-0 mx-0 justify-content-md-around">
+          <img src="img/coheteIcono.png" class="mt-3  d-none d-lg-block d-md-block" height="40" width="40">        
+          <div class="input-group mb-3 col-lg-10 col-md-10 col-12 mt-3">
+            <input type="text" class="form-control" placeholder="Amigos, Lugares y cosas que te gustan" aria-label="Amigos, Lugares y cosas que te gustan" aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-light" type="submit"><img src="img/search.svg" height="22" width="22"></button>
+              <button class="btn btn-light" type="submit" id="button-addon2"><img src="img/search.svg" height="20" width="20"></button>
             </div>
-          </div>
+           </div>
         </div>
-        <div class="col-lg-3c col-sm-4 col-12 order-1 order-sm-2">
+        <div class="col-lg-3 col-md-4 col-12 order-1 order-md-2">
           <div class="row justify-content-around">
             <a href="#"><img src="img/grupoIconoBlanco.png" class="mt-3" height="40" width="40"></a>
             <a href="#"><img src="img/campanaIcono.png"class="mt-3" height="40" width="40"></a>
             <a href="#"><img src="img/dialogoIcono.png" class="mt-3" height="40" width="40"></a>
-            <a href="#"><img src="img/img1.jpg" class="mt-3 rounded-circle d-none d-sm-block" height="40" width="40"></a>
+            <a href="#"><img src="img/img1.jpg" class="mt-3 rounded-circle" height="40" width="40"></a>
           </div>
         </div>
       </div>
     </header>
 
-    <div class="container-fluid col-12 col-lg-12 col-sm-12 mt-3">
+    <div class="container-fluid col-12 col-lg-12 col-md-12 mt-3">
       <div class="row">
-        
-        <nav id="nav1" class="container-fluid col-lg-2 col-sm-3 d-none d-sm-block">
+        <nav id="navTabletPec" class="container-fluid col-lg-2 col-md-3 d-none d-md-block">
           <div class="row border-bottom border-secondary">
             <ul>
               <li class="mb-3"><img src="img/grupoIconoNegro.png" class="mr-2"><a href="#" class="text-dark text-decoration-none">Amigos</a></li>
@@ -51,7 +51,7 @@
         </nav>
 
         
-        <nav id="nav2" class="container-fluid col-11 d-sm-none d-block bg-primary mt-3 mb-5 pt-2 pb-2">
+        <nav id="navMovil" class="container-fluid dropup col-11 d-sm-none d-block bg-primary mt-3 mb-5 pt-2 pb-2">
           <div class="row">
             <div class="col-11">
               <h6 class="text-light">Menu</h6>
@@ -59,7 +59,7 @@
             <img src="img/list.svg" data-toggle="modal" data-target="#exampleModalLong" height="22" width="22">
             <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
               <div class="modal-dialog menu2 col-11" role="document">
-                <div class="modal-content menu2">
+                <div class="modal-content menu2 ">
                   <div class="modal-body text-light">
                     <ul>
                       <li class="mb-3"><img src="img/grupoIconoBlanco.png" class="mr-2"><a href="#" class="text-light text-decoration-none">Amigos</a></li>
@@ -77,10 +77,10 @@
           </div>
         </nav>
 
-        <main class="container-fluid col-lg-7 col-sm-8 col-12 mb-5">
+        <main class="container-fluid col-lg-7 col-md-8 col-12 mb-5">
           <div class="media">
-            <img src="img/img1.jpg" class="d-none d-sm-block mt-3 rounded-circle" height="40" width="40">
-            <div class="media-body ml-sm-3 border-bottom border-secondary">
+            <img src="img/img1.jpg" class="mt-3 rounded-circle" height="40" width="40">
+            <div class="media-body ml-md-3 border-bottom border-secondary">
               <textarea class="col-lg-12" placeholder="Publicar Mensaje"></textarea>
               <div class="row justify-content-between">
                 <div class="mt-3 ">
@@ -88,7 +88,7 @@
                   <a href="#"><img src="img/playNegro.png" class="ml-3" height="22" width="22"></a>
                   <a href="#"><img src="img/musicaNegro.png" class="ml-3" height="22" width="22"></a>
                 </div>
-                <button type="button" class="btn btn-primary col-11 col-sm-3 col-lg-2 mx-auto mr-sm-3 mt-3 mb-3">Publicar</button>
+                <button type="button" class="btn btn-primary col-11 col-md-3 col-lg-2 mx-auto mr-md-3 mt-3 mb-3">Publicar</button>
               </div>
             </div>
           </div>
@@ -188,7 +188,7 @@
             <p class="text-primary">publicidad</p>
           </div>
           <div class="row">
-            <p class="col-lg-12 text-secondary px-0 ">Red Social 2018</p>
+            <p class="col-lg-12 text-secondary px-0 ">Red Social &#169; 2018</p>
           </div>
         </aside>
       </div>
